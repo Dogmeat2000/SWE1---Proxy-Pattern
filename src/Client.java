@@ -11,10 +11,10 @@ public class Client
 
   public Client(int clientId, String originCountry, String clientType)
   {
-    this.service = Proxy.getProxy(this);
     this.clientId = clientId;
     this.originCountry = originCountry;
     this.clientType = clientType;
+    this.service = Proxy.getProxy(this);
   }
 
 
