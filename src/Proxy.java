@@ -1,11 +1,13 @@
+import java.util.ArrayList;
+
 public class Proxy implements ServiceInterface
 {
-  private static ServiceInterface serviceInterface;
+  private final ServiceObject service;
   private static Proxy instance;
 
-  public Proxy()
+  private Proxy()
   {
-
+    this.service = (ServiceObject) getTrueService();
   }
 
 
@@ -19,11 +21,53 @@ public class Proxy implements ServiceInterface
     return instance;
   }
 
-
-
   public static ServiceInterface getTrueService()
   {
     return ServiceObject.getInstance();
   }
 
+
+
+  @Override public ArrayList<ArrayList<String>> getCitizenshipData(Client client)
+  {
+    //First authorize the client:
+    if(this.authorizeClient(client))
+    {
+      System.out.println(": Please wait! It will take some time to get the requested data!");
+      //client authorized. Fetch data:
+      return service.getCitizenshipData(client);
+    }
+    else
+    {
+      return null;
+    }
+  }
+
+
+
+  private boolean authorizeClient(Client client)
+  {
+    System.out.println(": Attempting to authorize client");
+
+    //Check if client Id is an authorized ID:
+    if(service.getAuthorizedIds().contains(client.getClientId()))
+    {
+      //Check if client is from an authorized country:
+      if(service.getAuthorizedCountries().contains(client.getOriginCountry()))
+      {
+        System.out.println(": Client successfully authorized");
+        return true;
+      }
+      else
+      {
+        System.out.println(": Authorization FAILED: Clients country/location is not valid.");
+        return false;
+      }
+    }
+    else
+    {
+      System.out.println(": Authorization failed: ClientId is not valid.");
+      return false;
+    }
+  }
 }
