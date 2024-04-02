@@ -5,23 +5,40 @@ public class Client
   private ServiceInterface service;
   private int clientId;
   private String originCountry;
+  private String clientType;
 
-  public Client(int clientId, ServiceInterface service, String originCountry)
+
+
+  public Client(int clientId, String originCountry, String clientType)
   {
-    this.service = service;
+    this.service = Proxy.getProxy(this);
     this.clientId = clientId;
     this.originCountry = originCountry;
+    this.clientType = clientType;
   }
+
+
 
   public int getClientId()
   {
     return clientId;
   }
 
+
+
   public String getOriginCountry()
   {
     return originCountry;
   }
+
+
+
+  public String getClientType()
+  {
+    return clientType;
+  }
+
+
 
   public void displayCitizenshipData()
   {

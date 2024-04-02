@@ -1,4 +1,3 @@
-import java.sql.Array;
 import java.util.ArrayList;
 
 public class Main
@@ -10,34 +9,33 @@ public class Main
     try
     {
       //Showcase Proxy functionality:
-      ServiceInterface service = Proxy.getProxy();
 
       //Create 5 different clients:
       System.out.println("Creating Dummy clients:");
 
       //Tick
       Thread.sleep(1000);
-      Client client1 = new Client(1, service, "Denmark");
+      Client client1 = new Client(1, "Denmark", "User");
       System.out.println("\nClient #" + client1.getClientId() + " from " + client1.getOriginCountry() + " is active.");
 
       //Tick
       Thread.sleep(1000);
-      Client client2 = new Client(3, service, "Germany");
+      Client client2 = new Client(3, "Germany", "User");
       System.out.println("Client #" + client2.getClientId() + " from " + client2.getOriginCountry() + " is active.");
 
       //Tick
       Thread.sleep(1000);
-      Client client3 = new Client(7, service, "DNK");
+      Client client3 = new Client(7, "DNK", "User");
       System.out.println("Client #" + client3.getClientId() + " from " + client3.getOriginCountry() + " is active.");
 
       //Tick
       Thread.sleep(1000);
-      Client client4 = new Client(11, service, "Australia");
+      Client client4 = new Client(11, "Australia", "User");
       System.out.println("Client #" + client4.getClientId() + " from " + client4.getOriginCountry() + " is active.");
 
       //Tick
       Thread.sleep(1000);
-      Client client5 = new Client(12, service, "DNK");
+      Client client5 = new Client(12, "DNK", "User");
       System.out.println("Client #" + client5.getClientId() + " from " + client5.getOriginCountry() + " is active.\n\n");
 
       //For each client attempt to query citizenship data.
