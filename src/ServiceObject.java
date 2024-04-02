@@ -15,6 +15,7 @@ public class ServiceObject implements ServiceInterface
     authorizedIds.add(19);
     authorizedIds.add(23);
     authorizedIds.add(29);
+    /* TODO: SHOULD FETCH FROM A SERVER OR DATABASE HERE! */
 
     return authorizedIds;
   }
@@ -28,6 +29,8 @@ public class ServiceObject implements ServiceInterface
     authorizedCountries.add("Denmark");
     authorizedCountries.add("DK");
     authorizedCountries.add("DNK");
+
+    /* TODO: SHOULD FETCH FROM A SERVER OR DATABASE HERE! */
 
     return authorizedCountries;
   }

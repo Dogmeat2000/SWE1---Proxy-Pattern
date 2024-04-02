@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8768704e-b606-4430-81a5-8285a538c465" name="Changes" comment="Mostly finished">
+    <list default="true" id="8768704e-b606-4430-81a5-8285a538c465" name="Changes" comment="99% Finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Proxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Proxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ServiceObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712043912705</updated>
-      <workItem from="1712043913787" duration="11510000" />
+      <workItem from="1712043913787" duration="11709000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -104,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712052461821</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="99% Finished">
+      <option name="closed" value="true" />
+      <created>1712055592734</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712055592734</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +118,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="1st Commit" />
     <MESSAGE value="Mostly finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mostly finished" />
+    <MESSAGE value="99% Finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="99% Finished" />
   </component>
 </project>
